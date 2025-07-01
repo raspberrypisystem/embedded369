@@ -87,17 +87,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update page indicator based on current page
     const pageIndicator = document.getElementById('page-indicator');
-    if (pageIndicator) {
-        const pageTitleMap = {
-            'index.html': 'Home',
-            'about.html': 'About Us',
-            'services.html': 'Services',
-            'projects.html': 'Projects',
-            'blog.html': 'Blog',
-            'careers.html': 'Careers',
-            'contact.html': 'Contact'
-        };
-        pageIndicator.textContent = pageTitleMap[currentPage] || 'Page';
-    }
+    const animatedWord = pageIndicator.querySelector('.animated-word');
+    const pageTitleMap = {
+        'index.html': 'Home',
+        'about.html': 'About Us',
+        'services.html': 'Services',
+        'projects.html': 'Projects',
+        'careers.html': 'Careers',
+        'contact.html': 'Contact'
+    };
+
+    animatedWord.textContent = pageTitleMap[currentPage] || 'Page';
 });
 
