@@ -388,8 +388,8 @@ border-radius: 10px;      border-top: 1px solid rgba(0, 212, 255, 0.1);
 
 .hero-image img {
   max-width: 100%;
-  width: 300px;
-  height: auto;
+  width: 400px;
+  height: 400px;
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
   animation: floatImage 3s ease-in-out infinite;
